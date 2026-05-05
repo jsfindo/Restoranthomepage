@@ -2,6 +2,7 @@
 import { loadHome } from './homepage.js';
 import { loadMenu } from './menu.js';
 import { loadContact } from './contact.js';
+import './style.css';
 
 // Comment out loadHome() and uncomment loadMenu() to see the menu!
 // loadHome();

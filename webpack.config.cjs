@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // Add this
 
 module.exports = {
   mode: 'development',
@@ -9,14 +9,17 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'eval-source-map',
-  devServer: {
-    watchFiles: ['./src/template.html'],
-    hot: true,
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html',
+      template: './src/template.html', // Tell it to use YOUR file
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 };

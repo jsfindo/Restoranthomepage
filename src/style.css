@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Clean white header */
+    border-bottom: 3px solid #2e4d32; /* Deep Basil Green accent line */
+}
+
+nav {
+    padding: 30px;
+    /* Removed blue color - buttons now handle the styling */
+}
+
+body {
+    /* Changed from grey to a warm, creamy parchment color */
+    background-color: #f9f4ef; 
+    color: #2c3e50;
+}
+
+h2 {
+    padding: 15px;
+    font-family: "Bodoni MT", "Bodoni 72", "Didot", serif;
+    color: #1b3022; /* Forest Green for a high-end feel */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    /* Using a rich Tomato Red for headers */
+    color: #a62c21; 
+}
+
+/* --- Navigation Buttons --- */
+
+nav button {
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    color: #2e4d32; /* Basil Green text */
+}
+
+nav button:hover {
+    color: #a62c21; /* Tomato Red on hover */
+    border-bottom: 2px solid #a62c21;
+}
+
+/* --- Content & Layout --- */
+
+#content {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-info {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-top: 40px;
+    padding: 20px;
+    /* Lighter cream for the info box */
+    background-color: #fffdfa; 
+    border-radius: 8px;
+    border: 1px solid #e0d7c6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info strong {
+    color: #a62c21; /* Tomato Red emphasis */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    /* Deep Green border for the menu container */
+    border: #2e4d32 solid 2px;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: white;
+}
+
+.menu-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.menu-item h3 {
+    color: #a62c21; /* Tomato Red dish names */
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.menu-item p {
+    font-style: italic;
+    color: #5d6d7e; /* Softer description text */
+}
